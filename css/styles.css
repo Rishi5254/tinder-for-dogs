@@ -1,3 +1,6 @@
+
+/* nav bar and title section */
+
 .margin_left{
     margin-left : auto;
 }
@@ -13,9 +16,13 @@
     font-family: 'Montserrat-Light', sans-serif;
     font-size: 1.2rem;
 }
+
+
 #title{
-    background-color:#ff4c68;
+
     color : #fff;
+    padding-bottom : 4rem;
+    background-color:#ff4c68;
 }
 .h1-heading{
     font-family: 'Montserrat', sans-serif;
@@ -37,16 +44,25 @@ body {
     margin-top: 4.5rem;
 }
 .iphone6-image{
-    transform: rotate(30deg);
-    width : 60%;
+    transform: rotate(25deg);
     margin-left: 3rem;
+    position : absolute;
+    width : 19rem;
+    right : 25%;
 }
+
+
+/* features section */
 
 
 
 #features{
-    margin : 3rem 0;
+    background-color : white;
+    padding : 3.5rem 0;
+    position : relative;
+    z-index : 1;
 }
+
 .feat-col{
     margin : 2rem 0;
     text-align : center;
@@ -68,7 +84,7 @@ p{
     color: grey;
 }
 
-
+/* testimonial section */
 
 
 #testimonials {
@@ -95,7 +111,7 @@ p{
     text-align : center;
 }
 
-
+/* press section */
 
 
 #press{
@@ -115,11 +131,11 @@ p{
 }
 
 
-
+/* pricing section */
 
 
 #pricing{
-    margin : 7% 7% 10% 7%;
+    margin : 5% 7%;
 }
 .pricing-container{
     text-align : center;
@@ -140,7 +156,8 @@ p{
 .pricing-col{
     text-align : center;
     border : 1rem;
-
+    margin: 3% 0%;
+    padding : 0 2%;
 }
 
 .card-header{
@@ -164,7 +181,7 @@ p{
     width : 100%;
 }
 
-
+/* cta section */
 
 
 #cta{
@@ -185,16 +202,49 @@ p{
     margin-right : 3%;
 }
 
-
+/* footer */
 
 #footer{
-    margin : 8% 0;
+    margin : 6rem 0;
     text-align : center;
 }
 
 .foot-icon{
-    margin : 2% 1%;
+    margin : 2rem 1rem;
 }
 .foot-para{
-    font-size : 1.1rem;
+    font-size : 60%;
+}
+
+
+/* media breaker */
+
+@media  (max-width: 1200px){
+    .title-row{
+        text-align : center;
+    }
+    .iphone6-image{
+        transform: rotate(0);
+        margin-left: 0;
+        position : static;
+        width : 15rem;
+    }
+    .pricing-col{
+        padding : 0 3rem;
+    }
+    .testimonial-text{
+        font-size : 1.5rem;
+    }
+    #testimonials{
+        padding : 5rem 0 2rem;
+    }
+    #press{
+        padding-bottom : 5rem;
+    }
+    .cta-heading{
+        font-size : 2.4rem;
+    }
+    #cta{
+        padding : 3rem 0 4rem;
+    }
 }
